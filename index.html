@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northfield ERP – Order-to-Cash Case Study</title>
+  <meta name="description" content="A Business Central-style order-to-cash demo: sales orders, inventory reservation, invoicing, payments and AR aging.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f6b5c'/%3E%3Ctext x='16' y='22' font-size='17' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo" aria-hidden="true">N</span> Northfield ERP</div>
+    <div class="topbar-actions">
+      <span class="demo-note">Demo · data is saved in your browser only</span>
+      <button type="button" id="reset" class="btn btn-ghost">Reset demo data</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidenav" aria-label="Main">
+      <p class="nav-group">Home</p>
+      <a href="#dashboard" data-view="dashboard">Dashboard</a>
+      <p class="nav-group">Sales</p>
+      <a href="#orders" data-view="orders">Sales orders</a>
+      <a href="#invoices" data-view="invoices">Invoices</a>
+      <a href="#customers" data-view="customers">Customers</a>
+      <p class="nav-group">Inventory</p>
+      <a href="#items" data-view="items">Items</a>
+      <a href="#ledger" data-view="ledger">Item ledger</a>
+      <p class="nav-group">Reports</p>
+      <a href="#aging" data-view="aging">AR aging</a>
+    </nav>
+    <main id="main" tabindex="-1"></main>
+  </div>
+
+  <dialog id="dlg" aria-labelledby="dlg-title">
+    <form id="dlg-form" method="dialog" novalidate>
+      <h2 id="dlg-title"></h2>
+      <div id="dlg-body"></div>
+      <ul id="dlg-errors" class="errors" role="alert"></ul>
+      <div class="form-actions">
+        <button type="button" class="btn btn-ghost" data-close>Cancel</button>
+        <button type="submit" class="btn btn-primary" id="dlg-submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

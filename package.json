@@ -1,0 +1,14 @@
+{
+  "name": "northfield-erp",
+  "version": "1.0.0",
+  "description": "Business Central-style order-to-cash ERP case study: sales orders, inventory, invoicing, payments and AR aging, with full test documentation.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
